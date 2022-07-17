@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="29" viewBox="0 0 65 29">
+  <g id="tag" transform="translate(-1662 -1224)">
+    <path id="Rectangle_3023" data-name="Rectangle 3023" d="M0,0H0A4,4,0,0,1,4,4V25a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1723 1224)" fill="#c71a21"/>
+    <path id="Rectangle_3025" data-name="Rectangle 3025" d="M0,0H1A3,3,0,0,1,4,3V3A3,3,0,0,1,1,6H0A0,0,0,0,1,0,6V0A0,0,0,0,1,0,0Z" transform="translate(1723 1247)" fill="#aa0209"/>
+    <g id="box" transform="translate(2 -1)">
+      <path id="Rectangle_3024" data-name="Rectangle 3024" d="M4,0H61a0,0,0,0,1,0,0V23a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(1660 1225)" fill="#db242c"/>
+      <text id="_" data-name=" " transform="translate(1668 1239)" fill="#fff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"> </tspan></text>
+      <text id="_2" data-name="        " transform="translate(1691 1244)" fill="#fff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" xml:space="preserve">        </tspan></text>
+    </g>
+  </g>
+</svg>

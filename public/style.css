@@ -1,0 +1,686 @@
+@font-face {
+  font-family: "NotoKufiArabic";
+  src: url("./fonts/NotoKufiArabic-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoKufiArabic-Bold";
+  src: url("./fonts/NotoKufiArabic-Bold.ttf");
+}
+
+.f-bold {
+  font-family: "NotoKufiArabic-Bold";
+}
+
+.container {
+  max-width: 1490px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "NotoKufiArabic";
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #898b92 !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #898b92 !important;
+}
+
+::placeholder {
+  color: #898b92 !important;
+}
+
+:focus {
+  box-shadow: none !important;
+}
+
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+.swiper-button {
+  color: rgb(0, 0, 0, 0.3);
+ 
+}
+
+.w-171px {
+  width: 171px;
+}
+
+.h-60px {
+  height: 60px;
+}
+
+.h-100px {
+  height: 100px;
+}
+
+.border-hex-f7f7f7 {
+  border-color: #f7f7f7 !important;
+}
+
+input {
+  caret-color: #db242c;
+}
+
+.w-16px {
+  width: 16px;
+}
+
+.h-16px {
+  height: 16px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.bg-hex-db242c {
+  background-color: #db242c;
+}
+
+.fs-8px {
+  font-size: 8px;
+}
+
+.color-hex-ffffff {
+  color: #ffffff;
+}
+
+.fs-10px {
+  font-size: 10px;
+}
+
+.color-hex-707070 {
+  color: #707070;
+}
+
+.color-hex-db242c {
+  color: #db242c;
+}
+
+.color-hex-434242 {
+  color: #434242;
+}
+
+button {
+  border: none;
+  background-color: unset;
+}
+
+.w-267px {
+  width: 267px;
+}
+
+.h-4px {
+  height: 4px;
+}
+
+.rounded-8px {
+  border-radius: 8px;
+}
+
+.mt-22px {
+  margin-top: 22px;
+}
+
+.color-hex-db242c--hover:hover {
+  color: #db242c;
+}
+
+.div-child-opacity-1--hover:hover>div {
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.animate-opacity {
+  transition-property: opacity;
+}
+
+.animate-color {
+  transition-property: color;
+}
+
+.animate-200 {
+  transition-duration: 200ms;
+}
+
+@media (min-width: 1400px) {
+  .gx-xxl-70px {
+    --bs-gutter-x: 70px;
+  }
+
+  .h-xxl-537px {
+    height: 573px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .w-xl-394px {
+    width: 394px !important;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+  .border-lg-start {
+    border-left: 1px solid #dee2e6 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid !important;
+    border-left-color: #f7f7f7 !important;
+
+  }
+
+  .h-lg-50vh {
+    height: 50vh;
+  }
+
+  .h-lg-535px{
+    height: 535px !important;
+  }
+  .w-lg-535px{
+    width: 535px !important;
+  }
+
+}
+.h-270px{
+  height: 270px;
+}
+.w-270px{
+  width: 270px;
+}
+
+.h-20vh {
+  height: 20vh;
+}
+
+
+.i-border-2px {
+  border-width: 2px !important;
+}
+
+.w-140px {
+  width: 140px;
+}
+
+.z-11 {
+  z-index: 11;
+}
+
+.mb-100px {
+  margin-bottom: 100px;
+}
+
+.bg-hex-2a2a2a {
+  background-color: #2a2a2a;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+.w-74px {
+  width: 74px;
+}
+
+.h-46px {
+  height: 46px;
+}
+
+.h-48px {
+  height: 48px;
+}
+
+.l-1px {
+  left: 1px;
+}
+
+.t-1px {
+  top: 1px;
+}
+
+.border-05px {
+  border-width: 0.5px !important;
+}
+
+.border-rgb-255-255-255-05 {
+  border-color: rgb(255, 255, 255, 0.5) !important;
+}
+
+.fs-18px {
+  font-size: 18px;
+}
+
+.pt-65-2px {
+  padding-top: 65.2px;
+}
+
+.pb-74-5px {
+  padding-bottom: 74.5px;
+}
+
+.mb-34-5px {
+  margin-bottom: 34.5px;
+}
+
+.h-510px {
+  height: 510px;
+}
+
+.py-12px {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.gx-13px {
+  --bs-gutter-x: 13px;
+}
+
+.mt-34-5px {
+  margin-top: 34.5px;
+}
+
+.w-286px {
+  width: 286px;
+}
+
+.t-22px {
+  top: 22px;
+  position: relative;
+}
+
+.h-79px {
+  height: 79px;
+}
+
+.color-hex-898b92 {
+  color: #898b92;
+}
+
+.pl-75px {
+  padding-left: 75px;
+}
+
+.w-48px {
+  width: 48px;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.z-12 {
+  z-index: 12;
+}
+
+
+.h-123px {
+  height: 123px;
+}
+
+.w-54px {
+  width: 54px;
+}
+
+.h-18-2px {
+  height: 18.2px;
+}
+
+.w-56px {
+  width: 56px;
+}
+
+.h-20-2px {
+  height: 20.2px;
+}
+
+.clip-path-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.border-hex-eeeeee {
+  border-color: #eeeeee !important;
+}
+
+
+.pt-31px {
+  padding-top: 31px;
+}
+
+.px-35-8px {
+  padding-left: 35.8px;
+  padding-right: 35.8px;
+}
+
+.r-47px {
+  right: 47px;
+}
+
+.-b-1px {
+  bottom: -1px;
+}
+
+.rounded-1px {
+  border-radius: 1px;
+}
+
+.t-16px {
+  top: 16px;
+}
+
+.pt-22px {
+  padding-top: 22px;
+}
+
+.pb-17-5px {
+  padding-bottom: 17.5px;
+}
+
+.pl-39-7px {
+  padding-left: 39.7px;
+}
+
+.w-350px {
+  width: 350px;
+}
+
+.mb-79px {
+  margin-bottom: 79px;
+}
+
+.fs-24px {
+  font-size: 24px;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.path-child-db242c--hover:hover path {
+  fill: #db242c;
+}
+
+.animate-fill {
+  transition-property: fill;
+}
+
+.w-260px {
+  width: 260px;
+}
+
+.h-260px {
+  height: 260px;
+}
+
+.w-264-04px {
+  width: 264.04px;
+}
+
+.color-hex-989899 {
+  color: #989899;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.o-cover {
+  object-fit: cover;
+}
+
+.w-128px {
+  width: 128px
+}
+
+.bg-hex-434242 {
+  background-color: #434242;
+}
+
+.h-43px {
+  height: 43px;
+}
+
+.w-40px {
+  width: 40px;
+}
+
+.w-32px {
+  width: 32px;
+}
+
+#tag {
+  background-image: url("./imgs/tag.svg");
+  width: 65px;
+  height: 29px;
+}
+
+.t-16px {
+  top: 16px;
+
+}
+
+.l-16px {
+  left: 16px;
+}
+
+.-r-6px {
+  right: -6px;
+}
+
+.safe-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.mt-37px {
+  margin-top: 37px;
+}
+
+.h-57px {
+  height: 57px;
+}
+
+.h-69px {
+  height: 69px;
+}
+
+.mt-20px {
+  margin-top: 20px;
+}
+
+.color-hex-4b4b4d {
+  color: #4B4B4D;
+}
+
+.h-186px {
+  height: 186px;
+}
+
+.w-186px {
+  width: 186px;
+}
+
+.h-150px {
+  height: 150px;
+}
+
+.swiper-button::after {
+  display: none;
+}
+
+.swiper-button {
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.my-swiper:not(:hover) .swiper-button {
+  opacity: 0;
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.h-112px{
+  height: 112px;
+}
+
+.w-112px{
+  width: 112px;
+}
+.border-hex-db242c{
+border-color: #DB242C !important;
+}
+
+.fs-26px{
+  font-size: 26px;
+}
+.bg-hex-eeeeee{
+  background-color: #eeeeee;
+}
+.w-52px{
+  width: 52px;
+}
+.h-52px{
+  height: 52px;
+}
+.pt-27px{
+padding-top: 27px;
+}
+
+.pb-36px{
+  padding-bottom: 36px;
+
+}
+.pr-40px{
+  padding-right: 40px;
+
+}
+.pl-99px{
+padding-left: 99px;
+}
+
+.max-w-1269px{
+  max-width: 1269px;
+}
+
+.w-46px{
+  width: 46px ;
+}
+.h-46px{
+  height: 46px;
+}
+
+.bg-rgb-0-0-0-08{
+background-color: rgb(0, 0, 0, 0.8);
+}
+.mt-51px{
+margin-top: 51px;
+}
+.my-swiper-5 .swiper-slide-thumb-active img {
+  border-color: #DB242C !important;
+
+}
+
+ .mt-28px{
+  margin-top: 28px;
+ }
+
+ .path-child-hex-ffffff--hover{
+  color: #ffffff;
+ }
+ .fill-hex-ffffff{
+  fill: #ffffff;
+ }
+
+ .bg-hex-ffffff--hover:hover{
+  background-color: #ffffff;
+ }
+ .animate-bg-color{
+  transition-property: background-color;
+ }
+ 
+ .w-5-5px{
+  width: 5.5px;
+ }
+ .cursor-pointer{
+  cursor: pointer;
+ }
+
+ .bg-hex-434242--hover:hover{
+  background-color: #434242;
+ }
+ .swiper-button-next,.swiper-button-prev{
+  background-color: #ffffff;
+  transition: background-color 200ms;
+
+ }
+ .swiper-button-next path,.swiper-button-prev path{
+  fill: #db242c;
+ }
+
+ .swiper-button-next:hover, .swiper-button-prev:hover{
+  background-color: #db242c;
+
+ }
+ .swiper-button-next:hover path,  .swiper-button-prev:hover path{
+  fill: #ffffff;
+ }

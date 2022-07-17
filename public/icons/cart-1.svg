@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="shopping_basket_black_24dp" transform="translate(-1)">
+    <path id="Path_1353" data-name="Path 1353" d="M0,0H16V16H0Z" transform="translate(1)" fill="none"/>
+    <path id="Path_1354" data-name="Path 1354" d="M16.273,7.151H12.789L9.6,2.313a.722.722,0,0,0-1.207,0L5.2,7.151H1.727A.734.734,0,0,0,1,7.888a.627.627,0,0,0,.029.2l1.847,6.826a1.449,1.449,0,0,0,1.4,1.075h9.455a1.464,1.464,0,0,0,1.4-1.075l1.847-6.826.022-.2A.734.734,0,0,0,16.273,7.151Zm-7.28-3.1,2.044,3.1H6.949ZM9,13.042a1.473,1.473,0,1,1,1.455-1.473A1.468,1.468,0,0,1,9,13.042Z" transform="translate(0 -0.987)" fill="#fff"/>
+  </g>
+</svg>

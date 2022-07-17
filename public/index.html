@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./out-source/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./out-source/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="shortcut icon" type="image/png" href="./imgs/logo.png" > -->
+
+
+    <title>Metro</title>
+</head>
+
+<body class="text-right mb-79px mb-lg-0">
+    <nav aria-label="mob-nav">
+        <div class="position-fixed start-0 m-4 z-11 d-lg-none">
+            <button id="open-nav" class="w-48px h-48px shadow-lg bg-white z-12 rounded-circle border border-hex-f7f7f7">
+                <img class="position-relative -b-1px" width="75%" src="./icons/mob-nav.svg" alt="mob-nav">
+            </button>
+        </div>
+
+        <div id="mob-nav" style="display: none;" class="d-lg-none h-100vh w-100vw position-fixed bg-white z-12">
+            <button id="close-nav" class="w-48px h-48px position-fixed start-0 m-4 shadow-lg rounded-circle"><img
+                    src="./icons/x.svg" alt="close"></button>
+            <div class="d-flex flex-column h-100 justify-content-center align-items-center overflow-auto">
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        الرئيسية
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        المتجر
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        العروض
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        منتجات مميزة
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        مواد غذائية
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        مواد تنظيف
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        حول الشركة
+
+                    </a>
+                </div>
+                <div class="mb-3">
+                    <a href=""
+                        class="color-hex-434242 fs-18px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                        اتصل بنا
+
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <nav aria-label="desktop-nav">
+
+        <div class="container">
+            <div
+                class="d-flex align-items-center h-100px border-2 border border-top-0  border-hex-f7f7f7 justify-content-center">
+                <div
+                    class="flex-shrink-0 w-267px h-100 d-flex align-items-center justify-content-center i-border-2px  border-lg-start border-hex-f7f7f7">
+                    <img class="w-171px h-60px" src="./imgs/logo.png" alt="logo">
+                </div>
+
+                <div class="form-group d-none  d-lg-flex px-5 flex-grow-1">
+                    <img class="ms-1" src="./icons/search.svg" alt="search">
+                    <input class="fs-14px form-control px-2 border-0" type="text" id="name"
+                        placeholder="ابحث عن ما تريد">
+                </div>
+                <div class="position-relative h-100 d-none d-lg-block">
+                    <div
+                        class="d-flex w-140px justify-content-center border-2 border-end border-hex-f7f7f7  h-100 justify-content- align-items-center">
+                        <button id="cart-button" class="d-flex align-items-center">
+                            <div class="position-relative pe-none">
+                                <img src="./icons/cart.svg" alt="cart">
+                                <div
+                                    class="position-absolute top-0 start-100 translate-middle-x w-16px  h-16px bg-hex-db242c rounded-circle d-flex justify-content-center align-items-center">
+                                    <span class="fs-8px color-hex-ffffff fw-bold">3</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column me-2 align-items-start">
+                                <span class="color-hex-707070 fs-10px">سلتي</span>
+                                <span><span class="color-hex-db242c fw-bold">43.67 </span><img class="align-baseline"
+                                        src="./icons/ils.svg" alt="ils"></span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div id="cart" class="position-absolute z-11" style="display: none !important;">
+                        <div class="position-relative t-16px">
+
+
+                            <div
+                                class="d-flex bg-white align-items-center fs-14px w-350px w-xl-394px  border position-absolute rounded-1 border-hex-eeeeee px-35-8px pt-22px pb-17-5px">
+
+                                <img class="pl-39-7px" src="./imgs/empty-cart.png" alt="empty-cart">
+                                <div class="d-flex flex-column">
+                                    <span class="color-hex-434242 mb-2">عربة التسوق فارغة</span>
+                                    <a class="color-hex-db242c color-hex-db242c--hover" href="">مواصلة التسوق</a>
+                                </div>
+
+                            </div> <img class="bg-white position-absolute r-47px rounded-1px -b-1px"
+                                src="./icons/cart-top.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div
+                    class="d-none  d-lg-flex justify-content-center w-140px border-2 border-end border-hex-f7f7f7  h-100 justify-content- align-items-center">
+                    <div class="position-relative">
+                        <img src="./icons/heart.svg" alt="heart">
+                        <div
+                            class="position-absolute top-0 start-100 translate-middle-x w-16px  h-16px bg-hex-db242c rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-8px color-hex-ffffff fw-bold">3</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column me-2">
+                        <span class="color-hex-707070 fs-10px">قائمة الرغبات</span>
+
+                    </div>
+                </div>
+                <div
+                    class="d-none  d-lg-flex  justify-content-center w-140px border-2 border-end border-hex-f7f7f7  h-100 justify-content- align-items-center">
+                    <div class="position-relative">
+                        <img src="./icons/account.svg" alt="account">
+                        <div
+                            class="position-absolute top-0 start-100 translate-middle-x w-16px  h-16px bg-hex-db242c rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-8px color-hex-ffffff fw-bold">3</span>
+                        </div>
+                    </div>
+                    <div class="d-none  d-lg-flex  flex-column me-2">
+                        <span class="color-hex-707070 fs-10px">تسجيل الدخول</span>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="d-none h-79px d-lg-flex align-items-center   border-2 border border-top-0 border-bottom-0 border-hex-f7f7f7">
+                <div class="border-2 border-start border-hex-f7f7f7 w-267px h-100 d-flex align-items-center">
+                    <button class="d-flex justify-content-between align-items-center px-4  w-100">
+                        <span class="color-hex-434242 bold ">جميع الفئات</span>
+                        <img src="./icons/arrow.svg" alt="arrow">
+                    </button>
+                </div>
+                <div
+                    class="row px-4 px-xl-5 row-cols-auto gx-lg-3 gx-xl-4 gx-xxl-70px   justify-content-between mt-auto">
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            الرئيسية
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            المتجر
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            العروض
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            منتجات مميزة
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            مواد غذائية
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            مواد تنظيف
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            حول الشركة
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""
+                            class="color-hex-434242 fs-14px d-block fw-bold div-child-opacity-1--hover animate-200 animate-color color-hex-db242c--hover">
+                            اتصل بنا
+                            <div
+                                class="bg-hex-db242c w-100 mt-22px h-4px rounded-8px opacity-0 animate-opacity animate-200">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <header>
+        <div class="swiper my-swiper-0 h-xxl-537px h-30vh h-lg-50vh swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden"
+            data-class=".my-swiper-0" data-slides-per-view="1" data-space-between="0" data-id="0">
+            <div class="swiper-wrapper max-h537" id="swiper-wrapper-6ca138686c9940dd" aria-live="polite"
+                style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 1801px;">
+                    <img src="./imgs/cover.jpg" alt="product"></div>
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 1801px;"> <img
+                        src="./imgs/cover.jpg" alt="product"></div>
+
+            </div>
+            <div class="swiper-button swiper-button-next swiper-button-next-0 border border-hex-db242c" tabindex="0"
+                role="button" aria-label="Next slide" aria-controls="swiper-wrapper-6ca138686c9940dd"
+                aria-disabled="false">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+            </div>
+            <div class="swiper-button swiper-button-prev swiper-button-prev-0 border border-hex-db242c swiper-button-disabled"
+                tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-6ca138686c9940dd"
+                aria-disabled="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(658.373 9.902) rotate(180)" fill="#434242"></path>
+                </svg>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+
+    </header>
+    <div class="h-69px"></div>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center color-hex-434242">
+            <span class="fs-24px fw-bold">عروض يومية</span>
+            <a href="" class="d-flex align-items-center path-child-db242c--hover transt color-hex-db242c--hover">
+                <span class="fs-12px animate-200 animate-color">عرض المزيد</span>
+
+                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path class="animate-fill animate-200" id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+
+
+            </a>
+        </div>
+        <div class="swiper my-swiper-1 mt-37px swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden"
+            data-class=".my-swiper-1" data-space-between="36" data-id="1">
+            <div class="swiper-wrapper" id="swiper-wrapper-2a52efd1df5f2feb" aria-live="polite"
+                style="transform: translate3d(0px, 0px, 0px);">
+
+
+                <div class="swiper-slide w-fit text-end swiper-slide-active" role="group" aria-label="1 / 7"
+                    style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end swiper-slide-next" role="group" aria-label="2 / 7"
+                    style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end" role="group" aria-label="3 / 7" style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end" role="group" aria-label="4 / 7" style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end" role="group" aria-label="5 / 7" style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end" role="group" aria-label="6 / 7" style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-slide w-fit text-end" role="group" aria-label="7 / 7" style="margin-left: 36px;">
+
+                    <div id="open-popup-product"
+                        class="cursor-pointer text-end position-relative w-264-04px rounded-8px border border-2 border-hex-f7f7f7">
+                        <img class="w-100 h-260px o-cover rounded-8px" src="./imgs/product-2.jpg" alt="product-2">
+                        <div class="w-100 p-3">
+                            <div class="fs-16px"><span class="color-hex-434242 me-2 fw-bold">₪2.00</span><span
+                                    class="color-hex-989899 text-decoration-line-through">₪3.00</span></div>
+                            <span class="text-break mt-2 fs-14px safe-text">مشروب شعير بفاريا سادة 500 مل
+                                Bavaria Original</span>
+                            <div class="d-flex mt-2 h-43px ">
+
+                                <div
+                                    class="border border-2 border-hex-f7f7f7 rounded-end  d-flex justify-content-center align-items-center text-center">
+                                    <button class="w-32px border-start h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/+.svg" alt="+"></button>
+                                    <span class="color-hex-434242 w-40px text-break">1</span>
+                                    <button class="w-32px w-32px border-end h-100 border-2 border-hex-f7f7f7"><img
+                                            src="./icons/-.svg" alt="-"></button>
+                                </div>
+                                <button class="rounded-start w-128px bg-hex-434242 color-hex-ffffff fs-14px"><img
+                                        src="./icons/cart-1.svg" alt="cart-1">
+                                    <span class="me-1">إضافة للسلة</span></button>
+                            </div>
+                        </div>
+
+                        <div id="tag" class="position-absolute t-16px -r-6px">
+                            <span class="fs-10px color-hex-ffffff f-bold text-center  d-block   mt-1">خصم %66</span>
+                        </div>
+                        <button class="position-absolute t-16px l-16px">
+                            <img src="./icons/heart-2.svg" alt="heart"></button>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="swiper-button swiper-button-next swiper-button-next-1 border border-hex-db242c" tabindex="0"
+                role="button" aria-label="Next slide" aria-controls="swiper-wrapper-2a52efd1df5f2feb"
+                aria-disabled="false">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+            </div>
+            <div class="swiper-button swiper-button-prev swiper-button-prev-1 border border-hex-db242c swiper-button-disabled"
+                tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-2a52efd1df5f2feb"
+                aria-disabled="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(658.373 9.902) rotate(180)" fill="#434242"></path>
+                </svg>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+
+
+
+    </div>
+    <div class="h-57px"></div>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center color-hex-434242">
+            <span class="fs-24px f-bold">تسوق حسب المطلوب</span>
+            <a href="" class="d-flex align-items-center path-child-db242c--hover transt color-hex-db242c--hover">
+                <span class="fs-12px animate-200 animate-color">عرض المزيد</span>
+
+                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path class="animate-fill animate-200" id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+
+
+            </a>
+        </div>
+        <div class="swiper my-swiper-2 mt-37px swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden"
+            data-class=".my-swiper-2" data-space-between="70" data-id="2">
+            <div class="swiper-wrapper" id="swiper-wrapper-eb287ffa8b1631fd" aria-live="polite"
+                style="transform: translate3d(0px, 0px, 0px);">
+
+                <div class="swiper-slide w-fit swiper-slide-active" role="group" aria-label="1 / 7"
+                    style="margin-left: 70px;">
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit swiper-slide-next" role="group" aria-label="2 / 7"
+                    style="margin-left: 70px;">
+
+
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="3 / 7" style="margin-left: 70px;">
+
+
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="4 / 7" style="margin-left: 70px;">
+
+
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="5 / 7" style="margin-left: 70px;">
+
+
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="6 / 7" style="margin-left: 70px;">
+
+
+                    <a href="">
+                        <img src="./icons/fresh-food.svg" alt="fresh-food">
+                        <span class="d-block mt-20px fs-18px f-bold color-hex-4b4b4d">أطعمة طازجة</span>
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="7 / 7" style="margin-left: 70px;">
+
+
+                    <a href=""
+                        class="h-186px w-186px rounded-circle bg-hex-db242c d-flex flex-column justify-content-center bg-hex-434242--hover animate-200 animate-bg-color">
+                        <span class="fs-16px fw-bold color-hex-ffffff text-center">عرض المزيد</span>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="swiper-button swiper-button-next swiper-button-next-2 border border-hex-db242c" tabindex="0"
+                role="button" aria-label="Next slide" aria-controls="swiper-wrapper-eb287ffa8b1631fd"
+                aria-disabled="false">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+            </div>
+            <div class="swiper-button swiper-button-prev swiper-button-prev-2 border border-hex-db242c swiper-button-disabled"
+                tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-eb287ffa8b1631fd"
+                aria-disabled="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(658.373 9.902) rotate(180)" fill="#434242"></path>
+                </svg>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+    </div>
+    <div class="h-57px"></div>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center color-hex-434242">
+            <span class="fs-24px f-bold">افضل ماركات</span>
+            <a href="" class="d-flex align-items-center path-child-db242c--hover transt color-hex-db242c--hover">
+                <span class="fs-12px animate-200 animate-color">عرض المزيد</span>
+
+                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path class="animate-fill animate-200" id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+
+
+            </a>
+        </div>
+        <div class="swiper my-swiper-3 mt-37px swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden"
+            data-class=".my-swiper-3" data-space-between="130" data-id="3">
+            <div class="swiper-wrapper h-150px" id="swiper-wrapper-01c956b3d132d570" aria-live="polite"
+                style="transform: translate3d(0px, 0px, 0px);">
+
+                <div class="swiper-slide w-fit swiper-slide-active" role="group" aria-label="1 / 10"
+                    style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit swiper-slide-next" role="group" aria-label="2 / 10"
+                    style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="3 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="4 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="5 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="6 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="7 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="8 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="9 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+                <div class="swiper-slide w-fit" role="group" aria-label="10 / 10" style="margin-left: 130px;">
+
+
+                    <a href="">
+                        <img src="./imgs/amazon.svg" alt="amazon">
+
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="swiper-button swiper-button-next swiper-button-next-3 border border-hex-db242c" tabindex="0"
+                role="button" aria-label="Next slide" aria-controls="swiper-wrapper-01c956b3d132d570"
+                aria-disabled="false">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(-653.373 0.098)" fill="#434242"></path>
+                </svg>
+            </div>
+            <div class="swiper-button swiper-button-prev swiper-button-prev-3 border border-hex-db242c swiper-button-disabled"
+                tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-01c956b3d132d570"
+                aria-disabled="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                    <path id="Path_255" data-name="Path 255"
+                        d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                        transform="translate(658.373 9.902) rotate(180)" fill="#434242"></path>
+                </svg>
+            </div>
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+    </div>
+
+
+    <div id="popup-product" class="p-4  bg-rgb-0-0-0-08 h-100vh w-100vw position-fixed top-0 z-12 overflow-auto"
+        style="display: none;">
+        <div
+            class="mx-auto d-flex flex-lg-row flex-column mt-5  px-3 px-l-4 px-xl-5 py-5  max-w-1269px bg-white  position-relative justify-content-between">
+            <button id="close-popup-product"
+                class="d-flex justify-content-center align-items-center translate-middle position-absolute top-0 start-100 w-46px h-46px rounded-circle border border-hex-eeeeee bg-white">
+                <img src="./icons/x-1.svg" alt="x-1">
+            </button>
+            <div class="">
+                <div class="swiper my-swiper-4 h-270px w-270px h-lg-535px w-lg-535px swiper-initialized swiper-horizontal swiper-rtl"
+                    data-class=".my-swiper-4" data-thumbs-class=".my-swiper-5" data-id="4">
+                    <div class="swiper-wrapper" id="swiper-wrapper-8d0a6c345b74461e" aria-live="polite"
+                        style="transition-duration: 0ms;">
+                        <div class="swiper-slide"><img src="./imgs/product-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/product-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/product-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/product-1.jpg" alt=""></div>
+
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+
+                <div class="swiper my-swiper-5 mt-28px swiper-initialized swiper-horizontal swiper-rtl swiper-thumbs"
+                    data-space-between="24" data-id="5">
+                    <div thumbsslider="" class="swiper-wrapper" id="swiper-wrapper-4f37a74f11068c56a" aria-live="polite"
+                        style="transition-duration: 0ms;">
+                        <div class="swiper-slide h-112px w-112px"><img
+                                class=" border-1 border rounded-1 border-hex-eeeeee" src="./imgs/product-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide h-112px w-112px"><img
+                                class=" border-1 border rounded-1 border-hex-eeeeee" src="./imgs/product-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide h-112px w-112px"><img
+                                class=" border-1 border rounded-1 border-hex-eeeeee" src="./imgs/product-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide h-112px w-112px"><img
+                                class=" border-1 border rounded-1 border-hex-eeeeee" src="./imgs/product-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-next swiper-button-next-5 border border-hex-db242c"
+                        tabindex="0" role="button" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-4f37a74f11068c56a" aria-disabled="false">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                            <path id="Path_255" data-name="Path 255"
+                                d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                                transform="translate(-653.373 0.098)" fill="#434242"></path>
+                        </svg>
+                    </div>
+                    <div class="swiper-button swiper-button-prev swiper-button-prev-5 border border-hex-db242c"
+                        tabindex="0" role="button" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-4f37a74f11068c56a" aria-disabled="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10">
+                            <path id="Path_255" data-name="Path 255"
+                                d="M654.243,4.906c.13-.135.242-.246.35-.363q1.813-1.955,3.625-3.911a.461.461,0,0,0,.154-.359.381.381,0,0,0-.221-.337.33.33,0,0,0-.378.058.941.941,0,0,0-.081.083l-4.146,4.476a.437.437,0,0,0,0,.694q2.081,2.247,4.161,4.494a.37.37,0,0,0,.412.14.405.405,0,0,0,.18-.617,1.269,1.269,0,0,0-.1-.114l-3.83-4.134C654.335,4.983,654.3,4.955,654.243,4.906Z"
+                                transform="translate(658.373 9.902) rotate(180)" fill="#434242"></path>
+                        </svg>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+            <div class="mt-51px  d-flex flex-column w-100 me-lg-5">
+                <span class="fs-26px color-hex-434242 safe-text">مشروب شعير بفاريا سادة 500 مل</span>
+                <span class="fs-18px color-hex-db242c mt-4">مراسلة البائع</span>
+                <hr class="bg-hex-eeeeee m-0  mt-4">
+
+                <div class="d-flex justify-content-between mt-4">
+
+                    <span class="color-hex-434242 fs-18px"> السعر :</span>
+                    <span class="color-hex-989899 fs-18px text-decoration-line-through">232$</span>
+                </div>
+                <div class="d-flex justify-content-between mt-4"> <span class="fs-18px color-hex-434242"> سعر الخصم
+                        :</span>
+                    <span class="color-hex-db242c fs-24px">232$</span>
+
+                </div>
+                <hr class="bg-hex-eeeeee m-0  mt-4">
+                <div class="d-flex justify-content-between align-items-center  mt-4">
+                    <span> الكمية : </span>
+                    <div
+                        class="h-52px w-fit border border-2 border-hex-eeeeee rounded  d-flex justify-content-center align-items-center text-center">
+                        <button class="w-52px border-start h-100 border-2 border-hex-eeeeee"><img src="./icons/+.svg"
+                                alt="+"></button>
+
+                        <span
+                            class="w-52px h-100 color-hex-434242  text-break d-flex justify-content-center align-items-center"><span>1</span>
+                        </span>
+                        <button class="w-52px border-end h-100 border-2 border-hex-eeeeee"><img src="./icons/-.svg"
+                                alt="-"></button>
+                    </div>
+
+                </div>
+                <hr class="bg-hex-eeeeee m-0  mt-4">
+
+                <div class="d-flex justify-content-between align-items-center  mt-4"> <span
+                        class="fs-18px color-hex-434242">السعر
+                        الكلي : </span>
+                    <span class="color-hex-db242c fs-24px">232$</span>
+
+                </div>
+                <button class="mt-4 fs-18px color-hex-ffffff bg-hex-db242c h-60px w-100 rounded-8px">إضافة الى
+                    السلة</button>
+                <button class="mt-22px fs-18px color-hex-ffffff bg-hex-434242 h-60px w-100 rounded-8px">اشتري
+                    الأن</button>
+                <div class="d-flex justify-content-between align-items-center mt-22px">
+                    <span class="color-hex-434242 fs-18px"> مشاركة:</span>
+                    <div class="row gx-2 row-cols-auto">
+                        <div class="col"><a href=""><img src="./imgs/youtube.png" alt="youtube"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/instagram.png" alt="instagram"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/twitter.png" alt="twitter"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/facebook.png" alt="facebook"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/tiktok-1.png" alt="tiktok-1"></a></div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        class="d-flex  d-lg-none h-79px py-3   position-fixed bottom-0 justify-content-between px-4 w-100 shadow-lg z-11 bg-white">
+        <a class="d-flex flex-column justify-content-between align-items-center fs-10px " href="">
+            <img src="./icons/account.svg" alt="">
+            <span>تسجيل الدخول</span>
+        </a>
+
+        <a class="d-flex flex-column justify-content-between align-items-center fs-10px " href="">
+            <img src="./icons/heart.svg" alt="">
+            <span>قائمة الرغبات </span>
+        </a>
+        <a class="d-flex flex-column justify-content-between align-items-center fs-10px " href="">
+            <img src="./icons/cart.svg" alt="">
+            <span>سلتي </span>
+        </a>
+
+        <a class="d-flex flex-column justify-content-between align-items-center fs-10px " href="">
+            <img src="./icons/heart.svg" alt="">
+            <span>الفئات </span>
+        </a>
+        <a class="d-flex flex-column justify-content-between align-items-center fs-10px " href="">
+            <img src="./icons/search-1.svg" alt="">
+            <span>بحث </span>
+        </a>
+
+
+    </div>
+
+    <footer class=" bg-hex-2a2a2a color-hex-ffffff ">
+        <div class="container h-100 h-510px pb-74-5px pt-65-2px d-flex flex-column justify-content-between">
+            <div class="row row-cols-lg-auto row-cols-md-2 row-cols-1  justify-content-between">
+                <div class="col d-flex flex-column align-items-lg-start align-items-center">
+
+                    <div class="mb-3">
+                        <img src="./imgs/logo-1.png" alt="">
+                    </div>
+                    <div>أول مركز تسوق في قطاع غزة</div>
+                    <div>فيه أجود المنتجات بأسعار منافسة</div>
+                    <div class="mt-3 mb-4 form-group position-relative h-48px w-267px">
+
+                        <input class="form-control h-100 pl-75px position-absolute border-0 fs-10px" type="text"
+                            name="subscribe" placeholder="عنوان بريدك الإلكتروني">
+                        <button
+                            class="color-hex-ffffff position-absolute t-1px l-1px fs-12px rounded-2 bg-hex-db242c w-74px h-46px">الأشتراك</button>
+                    </div>
+                    <div class="row gx-2 row-cols-auto">
+                        <div class="col"><a href=""><img src="./imgs/youtube.png" alt="youtube"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/instagram.png" alt="instagram"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/twitter.png" alt="twitter"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/facebook.png" alt="facebook"></a></div>
+                        <div class="col"> <a href=""><img src="./imgs/tiktok.png" alt="tiktok"></a></div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col  d-flex flex-column align-items-lg-start align-items-center mt-5 mt-md-3">
+                    <span class="fs-18px bold color-hex-db242c mb-4">معلومات الاتصال</span>
+                    <span class="mb-2">عنوان :</span>
+                    <a class="mb-2" href="">غزة_ شارع الشهداء_غرب أصدقاء المريض</a>
+                    <span class="mb-2">هاتف :</span>
+                    <a class="mb-2" href="">28822888</a>
+                    <span class="mb-2">البريد الإلكتروني :</span>
+                    <a href="">metro@metro-markwt.ps</a>
+                </div>
+                <div class="col d-flex flex-column align-items-lg-start align-items-center  mt-5 mt-lg-3">
+                    <span class="mb-4 fs-18px bold color-hex-db242c mb-4">التنصنيفات الشائعة</span>
+                    <a class="mb-2" href="">المشروبات</a>
+                    <a class="mb-2" href="">أطعمة طازجة</a>
+                    <a class="mb-2" href="">منتجات الألبان</a>
+                    <a class="mb-2" href="">خضروات و فواكهة</a>
+                    <a class="mb-2" href="">مواد غذائية</a>
+                </div>
+                <div class="col  d-flex flex-column align-items-lg-start align-items-center mt-5 mt-lg-3">
+                    <span class="mb-4 fs-18px bold color-hex-db242c">حسابي</span>
+                    <a class="mb-2" href="">تسجيل الدخول</a>
+                    <a class="mb-2" href="">تاريخ الطلب</a>
+                    <a class="mb-2" href="">قائمة امنياتي</a>
+                    <a class="mb-2" href="">ترتيب المسار</a>
+
+                </div>
+            </div>
+
+
+
+
+            <div
+                class="border-05px mt-34-5px row row-cols-md-auto row-cols-1 gy-3 g-md-0 justify-content-between border-top border-bottom border-05px border-rgb-255-255-255-05 py-12px align-items-center g-0">
+                <div
+                    class="col col-md-4 row row-cols-xl-auto mb-md-0 mb-3 row-cols-2 fs-12px gx-13px gy-3 gy-md-0 text-center">
+                    <span><a class="col" href="">سياسة البائع</a></span>
+                    <span> <a class="col" href="">سياسة العائدات</a></span>
+                    <span> <a class="col" href="">سياسة الدعم</a></span>
+                    <span> <a class="col" href="">سياسة التوصيل</a></span>
+
+                </div>
+                <div class="row justify-content-center col col-md-4 row-cols-auto gx-2">
+                    <div class="col">
+                        <img src="./imgs/palpay.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./imgs/cash.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./imgs/visa.png" alt="">
+                    </div>
+
+                    <div class="col">
+                        <img src="./imgs/bank.png" alt="">
+                    </div>
+                </div>
+                <span class="col col-md-4 text-center text-md-start fs-18px f-bold">Powered By Dash</span>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <script src="./out-source/swiper/swiper-bundle.min.js" de=""></script>
+    <script src="./out-source/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+
+        $("#open-nav").click(function () {
+            $("#mob-nav").fadeToggle(100);
+        });
+        $("#close-nav").click(function () {
+            $("#mob-nav").fadeToggle(100);
+        });
+
+        $("#cart-button").click(function () {
+
+            $("#cart").fadeToggle(100);
+
+        });
+
+        $(document).on("click", function (event) {
+            if ($(event.target).closest("#cart-button").length) return;
+            if ($(event.target).closest("#cart").length === 0) {
+                $("#cart").fadeOut(100);
+            }
+        });
+
+
+        $(".swiper[data-class]").each(function (i, ele) {
+            let thumbsSwiper = $(ele).attr("data-thumbs-class");
+            console.log(".swiper-button-next-" + $(ele).attr("data-id"));
+            new Swiper($(ele).attr("data-class"), {
+
+                slidesPerView: +$(ele).attr("data-slides-per-view") || "auto",
+                spaceBetween: 20,
+
+                navigation: {
+                    nextEl: ".swiper-button-next-" + $(ele).attr("data-id"),
+                    prevEl: ".swiper-button-prev-" + $(ele).attr("data-id"),
+
+                },
+                breakpoints: {
+                    992: {
+                        spaceBetween: +$(ele).attr("data-space-between") || 0,
+
+                    },
+                },
+                thumbs: {
+                    swiper: thumbsSwiper && new Swiper(thumbsSwiper, {
+                        slidesPerView: +$(thumbsSwiper).attr("data-slides-per-view") || "auto",
+                        spaceBetween: +$(thumbsSwiper).attr("data-space-between") || 0,
+                        navigation: {
+                            nextEl: ".swiper-button-next-" + $(thumbsSwiper).attr("data-id"),
+                            prevEl: ".swiper-button-prev-" + $(thumbsSwiper).attr("data-id"),
+
+                        },
+
+                    })
+                }
+
+
+            });
+        });
+
+
+
+        $("#open-popup-product").click(function () {
+            $("#popup-product").fadeToggle(100);
+        });
+        $("#close-popup-product").click(function () {
+            $("#popup-product").fadeToggle(100);
+        });
+
+    </script>
+
+
+</body>
+
+</html>
